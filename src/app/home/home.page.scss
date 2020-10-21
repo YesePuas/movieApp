@@ -1,0 +1,18 @@
+.boton-go{
+    --background:#ff8a00;
+    --color: #000000;
+    width: 100px;
+    margin-top: -200px;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: #c51f1f;
+}
+.imagen{
+    width: 250px;
+    height: auto;
+}

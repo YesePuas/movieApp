@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar class="header">
+    <ion-icon class="icon-atras" slot="start" (click)="atras()" name="chevron-back"></ion-icon>
+    <ion-title class="titulo-header" slot="start">Detalle de tu película</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="card">
+    <div class="movie-detalle">
+      <ion-img class="movie-detalle-portada" *ngIf="movie.Poster!='N/A'" src="{{movie.Poster}}"></ion-img>
+      <ion-img class="movie-detalle-portada" *ngIf="movie.Poster=='N/A'" src="assets/icon/Image-Not-Available.png"></ion-img>
+      <div class="movie-container-info">
+        <div class="movie-detalle-info titulo" animated>{{movie.Title}}</div>
+        <div class="movie-detalle-info text-info" animated>Tipo: {{movie.Type}}</div>
+        <div class="movie-detalle-info text-info" animated>Año: {{movie.Year}}</div>
+      </div>
+    </div>
+  </ion-card>
+</ion-content>
